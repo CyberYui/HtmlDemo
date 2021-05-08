@@ -12,76 +12,68 @@
   <body>
     <!-- header 包含导航菜单 -->
     <div class="container fixed-container">
-      <div class="row col-lg-12">
+      <div class="">
         <nav class="main_menu">
-          <div class="row col-lg-2">
-            <!-- logo -->
-            <h1 class="logo">
+          <!-- logo -->
+          <h1 class="logo">
+            <a href="index.html">
+              <img
+                src="http://1.14.16.123:80/uploadFiles/uploadImgs/20210507/29477dfba8c54ce181af1df6331dbb0a.png"
+                alt="网站名称"
+                title="网站名称"
+            /></a>
+          </h1>
+
+          <ul class="">
+            <li id="index" class="">
               <a href="index.html">
-                <img
-                  src="http://1.14.16.123:80/uploadFiles/uploadImgs/20210507/29477dfba8c54ce181af1df6331dbb0a.png"
-                  alt="网站名称"
-                  title="网站名称"
-              /></a>
-            </h1>
-          </div>
+                首页
+                <div class="sub">Home</div>
+              </a>
+            </li>
 
-          <ul class="col-lg-10">
-            <div class="row col-lg-3">
-              <li id="index" class="col-lg-1">
-                <a href="index.html">
-                  首页
-                  <div class="sub">Home</div>
-                </a>
-              </li>
+            <li id="aboutus" class="">
+              <a href="webaboutus.html">
+                关于我们
+                <div class="sub">About Us</div>
+              </a>
+            </li>
 
-              <li id="aboutus" class="col-lg-1">
-                <a href="webaboutus.html">
-                  关于我们
-                  <div class="sub">About Us</div>
-                </a>
-              </li>
+            <!-- 添加行业资质导航标签 -->
+            <li id="aptitude" class="">
+              <a href="webhyzz.html">
+                行业资质
+                <div class="sub">Aptitude</div>
+              </a>
+            </li>
 
-              <!-- 添加行业资质导航标签 -->
-              <li id="aptitude" class="col-lg-1">
-                <a href="webhyzz.html">
-                  行业资质
-                  <div class="sub">Aptitude</div>
-                </a>
-              </li>
-            </div>
+            <li id="Product" class="">
+              <a href="webproduct.html">
+                产品案例
+                <div class="sub">Product case</div>
+              </a>
+            </li>
 
-            <div class="row col-lg-6">
-              <li id="Product" class="col-lg-2">
-                <a href="webproduct.html">
-                  产品案例
-                  <div class="sub">Product case</div>
-                </a>
-              </li>
+            <li id="cooperation" class="">
+              <a href="webcooperation.html"
+                >合作共赢
+                <div class="sub">Cooperation</div>
+              </a>
+            </li>
 
-              <li id="cooperation" class="col-lg-2">
-                <a href="webcooperation.html"
-                  >合作共赢
-                  <div class="sub">Cooperation</div>
-                </a>
-              </li>
+            <li id="News" class="">
+              <a href="webnews.html">
+                新闻动态
+                <div class="sub">News & Events</div>
+              </a>
+            </li>
 
-              <li id="News" class="col-lg-2">
-                <a href="webnews.html">
-                  新闻动态
-                  <div class="sub">News & Events</div>
-                </a>
-              </li>
-            </div>
-
-            <div class="row">
-              <li id="contactus" class="col-lg-1">
-                <a href="webcontactus.html">
-                  联系我们
-                  <div class="sub">Contact US</div>
-                </a>
-              </li>
-            </div>
+            <li id="contactus" class="">
+              <a href="webcontactus.html">
+                联系我们
+                <div class="sub">Contact US</div>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- navigation -->
@@ -139,7 +131,7 @@
       margin-top: 5px;
     }
 
-    nav.main_menu > ul >div> li {
+    nav.main_menu > ul > li {
       display: block;
       float: left;
       position: relative;
