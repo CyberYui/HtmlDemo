@@ -12,11 +12,11 @@
   <body>
     <!-- header 包含导航菜单 -->
     <div class="container fixed-container">
-      <div class="row">
-        <div class="col-lg-12 col-md-6">
-          <nav class="main_menu">
+      <div class="row col-lg-12">
+        <nav class="main_menu">
+          <div class="row col-lg-2">
             <!-- logo -->
-            <h1 class="col-lg-1 col-md-6 logo">
+            <h1 class="logo">
               <a href="index.html">
                 <img
                   src="http://1.14.16.123:80/uploadFiles/uploadImgs/20210507/29477dfba8c54ce181af1df6331dbb0a.png"
@@ -24,16 +24,18 @@
                   title="网站名称"
               /></a>
             </h1>
+          </div>
 
-            <ul>
-              <li id="index" class="col-lg-1 col-md-6">
+          <ul class="col-lg-10">
+            <div class="row col-lg-3">
+              <li id="index" class="col-lg-1">
                 <a href="index.html">
                   首页
                   <div class="sub">Home</div>
                 </a>
               </li>
 
-              <li id="aboutus" class="col-lg-2  col-md-6">
+              <li id="aboutus" class="col-lg-1">
                 <a href="webaboutus.html">
                   关于我们
                   <div class="sub">About Us</div>
@@ -41,68 +43,72 @@
               </li>
 
               <!-- 添加行业资质导航标签 -->
-              <li id="aptitude" class="col-lg-1  col-md-6">
+              <li id="aptitude" class="col-lg-1">
                 <a href="webhyzz.html">
                   行业资质
                   <div class="sub">Aptitude</div>
                 </a>
               </li>
+            </div>
 
-              <li id="Product" class="col-lg-2  col-md-6">
+            <div class="row col-lg-6">
+              <li id="Product" class="col-lg-2">
                 <a href="webproduct.html">
                   产品案例
                   <div class="sub">Product case</div>
                 </a>
               </li>
 
-              <li id="cooperation" class="col-lg-2  col-md-6">
+              <li id="cooperation" class="col-lg-2">
                 <a href="webcooperation.html"
                   >合作共赢
                   <div class="sub">Cooperation</div>
                 </a>
               </li>
 
-              <li id="News" class="col-lg-2  col-md-6">
+              <li id="News" class="col-lg-2">
                 <a href="webnews.html">
                   新闻动态
                   <div class="sub">News & Events</div>
                 </a>
               </li>
+            </div>
 
-              <li id="contactus" class="col-lg-1  col-md-6">
+            <div class="row">
+              <li id="contactus" class="col-lg-1">
                 <a href="webcontactus.html">
                   联系我们
                   <div class="sub">Contact US</div>
                 </a>
               </li>
-            </ul>
-          </nav>
-          <!-- navigation -->
-        </div>
+            </div>
+          </ul>
+        </nav>
+        <!-- navigation -->
       </div>
     </div>
   </body>
   <style>
-    #index{
+    #index {
       width: 8% !important;
-      margin-left:20px;
+      margin-left: 20px;
     }
-    #aboutus{
+    #aboutus {
       width: 10% !important;
     }
-    #aptitude{
+    #aptitude {
       width: 12% !important;
     }
-    #Product{
+    #Product {
       width: 12% !important;
     }
-    #cooperation{
+    #cooperation {
       width: 12% !important;
     }
-    #News{
+    #News {
       width: 16% !important;
     }
-    #contactus{
+    #contactus {
       width: 12% !important;
     }
     /* Header ==========================*/
@@ -133,7 +139,7 @@
       margin-top: 5px;
     }
 
-    nav.main_menu > ul > li {
+    nav.main_menu > ul >div> li {
       display: block;
       float: left;
       position: relative;
@@ -212,39 +218,39 @@
       border-top: 4px solid #cfcfcf;
     }
 
-    nav.main_menu>ul>li>a {
+    nav.main_menu > ul > li > a {
       padding: 10px 10px;
       display: block;
       font-size: 16px;
       color: #393939;
       text-transform: uppercase;
-      font-weight:bold;
+      font-weight: bold;
       text-align: left;
       transition: background 0.3s ease-in-out 0s;
     }
-    
-    nav.main_menu>ul>li>a:hover {
+
+    nav.main_menu > ul > li > a:hover {
       text-decoration: none;
     }
-    
-    nav.main_menu>ul>li:hover>a {
+
+    nav.main_menu > ul > li:hover > a {
       background-color: #04bfea;
       color: #fff;
     }
-    
-    nav.main_menu>ul>li:hover>a .sub {
+
+    nav.main_menu > ul > li:hover > a .sub {
       color: #fff;
     }
-    
-    nav.main_menu>ul>li.current_page_item>a {
+
+    nav.main_menu > ul > li.current_page_item > a {
       background-color: #04bfea;
       color: #fff;
     }
-    
-    nav.main_menu>ul>li.current_page_item>a .sub {
+
+    nav.main_menu > ul > li.current_page_item > a .sub {
       color: #fff;
     }
-    
+
     .sub {
       color: #0fa7c9;
       font-size: 15px;
