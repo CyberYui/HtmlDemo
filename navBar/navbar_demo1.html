@@ -8,17 +8,22 @@
     <link
       rel="stylesheet"
       href="../uiStruction/bootstrap-3.4.1-dist/css/bootstrap.min.css"
-      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
     />
     <script src="../uiStruction/jQuery-3.6.0.js"></script>
     <script
       src="../uiStruction/bootstrap-3.4.1-dist/js/bootstrap.min.js"
-      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
     ></script>
   </head>
   <body>
     <div class="container">
       <!-- 要几行就在这里写几个类为 row 的 div -->
+      <!-- 
+        关于各种宽度:
+        col-xs-* 手机的竖屏 <768px
+        col-sm-* 手机的横屏 768px~992px
+        col-md-* 平板的屏幕 992px~1200px
+        col-lg-* 超大额屏幕 >1200px
+       -->
       <div class="row">
         <div class="col-lg-1">1111</div>
         <div class="col-lg-1">1111</div>
@@ -26,22 +31,96 @@
         <div class="col-lg-1">1111</div>
         <div class="col-lg-1">1111</div>
         <div class="col-lg-1">1111</div>
+        <div class="col-lg-1">1111</div>
+        <div class="col-lg-1">1111</div>
+        <div class="col-lg-1">1111</div>
+        <div class="col-lg-1">1111</div>
+        <div class="col-lg-1">1111</div>
+        <div class="col-lg-1">1111</div>
       </div>
-      <div class="row">
-        222222222
-      </div>
-      <div class="row">
-        333333333
-      </div>
-      <div class="row">
-        444444444
-      </div>
-      <div class="row">
-        555555555
-      </div>
-      <div class="row">
-        666666666
-      </div>
+      <div class="row">222222222</div>
+      <div class="row">333333333</div>
+      <div class="row">444444444</div>
+      <div class="row">555555555</div>
+      <div class="row">666666666</div>
+    </div>
+    <div class="row"></div>
+    <!-- 实际要使用的 navbar -->
+    <div class="container">
+      <nav class="navbar navbar-default fixed-navbar">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">
+            <!-- <p class="navbar-text fixed-navbar-text">Logo demo</p> -->
+            <img
+              src="../imgs/logo_160_40.png"
+              alt="brand"
+              class="img-rounded"
+            />
+          </a>
+        </div>
+        <div class="col-xs-10 col-md-10 fixed-navbar-item">
+
+          <ul>
+            <li id="index" class="col-md-own ul-item-index">
+              <!-- <a href="index.html"> 首页  -->
+              <a href="#" class="btn btn-primary btn-lg" role="button"
+                >首页
+                <div class="sub"></div>
+              </a>
+            </li>
+
+            <li id="aboutus" class="col-md-own ul-item-fixed">
+              <!-- <a href="webaboutus.html"> 关于我们 -->
+              <a href="#" class="btn btn-primary btn-lg" role="button"
+                >关于我们
+                <div class="sub"></div>
+              </a>
+            </li>
+
+            <!-- 添加行业资质导航标签 -->
+            <li id="aptitude" class="col-md-own ul-item-fixed">
+              <!-- <a href="webhyzz.html"> 行业资质 -->
+              <a href="#" class="btn btn-primary btn-lg" role="button"
+                >行业资质
+                <div class="sub"></div>
+              </a>
+            </li>
+
+            <li id="Product" class="col-md-own ul-item-fixed">
+              <!-- <a href="webproduct.html"> 产品案例 -->
+              <a href="#" class="btn btn-primary btn-lg" role="button"
+                >产品案例
+                <div class="sub"></div>
+              </a>
+            </li>
+
+            <li id="cooperation" class="col-md-own ul-item-fixed">
+              <!-- <a href="webcooperation.html">合作共赢 -->
+              <a href="#" class="btn btn-primary btn-lg" role="button"
+                >合作共赢
+                <div class="sub"></div>
+              </a>
+            </li>
+
+            <li id="News" class="col-md-own ul-item-fixed">
+              <!-- <a href="webnews.html"> 新闻动态 -->
+              <a href="#" class="btn btn-primary btn-lg" role="button"
+                >新闻动态
+                <div class="sub"></div>
+              </a>
+            </li>
+
+            <li id="contactus" class="col-md-own ul-item-fixed">
+              <!-- <a href="webcontactus.html"> 联系我们 -->
+              <a href="#" class="btn btn-primary btn-lg" role="button"
+                >联系我们
+                <div class="sub"></div>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
     </div>
   </body>
   <style rel="stylesheet">
@@ -49,12 +128,11 @@
       background-image: url("../imgs/backgroundIMG/double-bubble-dark/double-bubble-dark.png");
       background-color: antiquewhite;
     }
-    div{
+    div {
       border-style: solid;
-      border: 1px;
+      border-width: 1px;
       border-color: red;
-
+      background-color: white;
     }
-    
   </style>
 </html>
