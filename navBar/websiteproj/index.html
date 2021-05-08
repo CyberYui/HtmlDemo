@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FH 网站模版</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="../../uiStruction/bootstrap-3.4.1-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- header 包含导航菜单 -->
+    <div class="container fixed-container">
+      <div class="row">
+        <div class="col-lg-12 col-md-6">
+          <nav class="main_menu">
+            <!-- logo -->
+            <h1 class="col-lg-1 col-md-6 logo">
+              <a href="index.html">
+                <img
+                  src="http://1.14.16.123:80/uploadFiles/uploadImgs/20210507/29477dfba8c54ce181af1df6331dbb0a.png"
+                  alt="网站名称"
+                  title="网站名称"
+              /></a>
+            </h1>
+
+            <ul>
+              <li id="index" class="col-lg-1 col-md-6">
+                <a href="index.html">
+                  首页
+                  <div class="sub">Home</div>
+                </a>
+              </li>
+
+              <li id="aboutus" class="col-lg-2  col-md-6">
+                <a href="webaboutus.html">
+                  关于我们
+                  <div class="sub">About Us</div>
+                </a>
+              </li>
+
+              <!-- 添加行业资质导航标签 -->
+              <li id="aptitude" class="col-lg-1  col-md-6">
+                <a href="webhyzz.html">
+                  行业资质
+                  <div class="sub">Aptitude</div>
+                </a>
+              </li>
+
+              <li id="Product" class="col-lg-2  col-md-6">
+                <a href="webproduct.html">
+                  产品案例
+                  <div class="sub">Product case</div>
+                </a>
+              </li>
+
+              <li id="cooperation" class="col-lg-2  col-md-6">
+                <a href="webcooperation.html"
+                  >合作共赢
+                  <div class="sub">Cooperation</div>
+                </a>
+              </li>
+
+              <li id="News" class="col-lg-2  col-md-6">
+                <a href="webnews.html">
+                  新闻动态
+                  <div class="sub">News & Events</div>
+                </a>
+              </li>
+
+              <li id="contactus" class="col-lg-1  col-md-6">
+                <a href="webcontactus.html">
+                  联系我们
+                  <div class="sub">Contact US</div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- navigation -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    #index{
+      width: 8% !important;
+      margin-left:20px;
+    }
+    #aboutus{
+      width: 10% !important;
+    }
+    #aptitude{
+      width: 12% !important;
+    }
+    #Product{
+      width: 12% !important;
+    }
+    #cooperation{
+      width: 12% !important;
+    }
+    #News{
+      width: 16% !important;
+    }
+    #contactus{
+      width: 12% !important;
+    }
+    /* Header ==========================*/
+    .header {
+      width: 100%;
+      position: relative;
+      margin: 10px 0 0 0;
+      padding: 0 0 10px 10px;
+    }
+
+    h1.logo {
+      float: left;
+      line-height: 1.5;
+      margin-top: 5px !important;
+      margin-bottom: 15px !important;
+      width: 16% !important;
+    }
+
+    /* Main Navigation ==========================*/
+    nav.main_menu {
+      width: 1170px;
+      float: left;
+      position: relative;
+      z-index: 500;
+    }
+
+    .container.fixed-container {
+      margin-top: 5px;
+    }
+
+    nav.main_menu > ul > li {
+      display: block;
+      float: left;
+      position: relative;
+      width: 12% !important;
+      padding: 8px;
+    }
+
+    /* submenus */
+    nav.main_menu ul ul {
+      width: 185px;
+      display: none;
+      position: absolute;
+      left: 0px;
+    }
+
+    nav.main_menu ul ul li {
+      display: block;
+      position: relative;
+      background-color: #333333;
+      border-top: 1px solid #3d3d3d;
+      border-bottom: 1px solid #242424;
+    }
+
+    nav.main_menu ul ul li a {
+      padding: 11px 10px 12px 16px;
+      display: block;
+      font-family: "Open Sans", Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      color: #b5b5b5;
+      line-height: 1em;
+    }
+
+    nav.main_menu ul ul a:hover {
+      text-decoration: none;
+    }
+
+    nav.main_menu ul ul li:hover {
+      background-color: #04bfea;
+      transition: background 0.3s ease-in-out 0s;
+    }
+
+    nav.main_menu ul ul li:hover > a {
+      color: #fff;
+    }
+
+    nav.main_menu li:hover > ul {
+      display: block;
+    }
+
+    nav.main_menu > ul > li > ul > li:first-child {
+      border-top: 0px;
+    }
+
+    nav.main_menu > ul > li > ul > li:first-child li:first-child {
+      border-top: 0px;
+    }
+
+    nav.main_menu ul ul ul {
+      padding-top: 0px;
+      left: 185px;
+      top: -2px;
+      border-top: 1px solid #242424;
+    }
+
+    nav.main_menu ul ul li:first-child > ul {
+      top: 0px;
+      border-top: 0px;
+    }
+
+    nav.main_menu > select {
+      display: none;
+    }
+
+    nav.main_menu > ul > li:hover {
+      margin-top: -4px;
+      border-top: 4px solid #cfcfcf;
+    }
+
+    nav.main_menu>ul>li>a {
+      padding: 10px 10px;
+      display: block;
+      font-size: 16px;
+      color: #393939;
+      text-transform: uppercase;
+      font-weight:bold;
+      text-align: left;
+      transition: background 0.3s ease-in-out 0s;
+    }
+    
+    nav.main_menu>ul>li>a:hover {
+      text-decoration: none;
+    }
+    
+    nav.main_menu>ul>li:hover>a {
+      background-color: #04bfea;
+      color: #fff;
+    }
+    
+    nav.main_menu>ul>li:hover>a .sub {
+      color: #fff;
+    }
+    
+    nav.main_menu>ul>li.current_page_item>a {
+      background-color: #04bfea;
+      color: #fff;
+    }
+    
+    nav.main_menu>ul>li.current_page_item>a .sub {
+      color: #fff;
+    }
+    
+    .sub {
+      color: #0fa7c9;
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: -3px;
+      text-transform: none;
+    }
+
+    /* #Media Queries
+    ================================================== */
+
+    /* Smaller than standard 960 (devices and browsers) */
+    @media only screen and (max-width: 959px) {
+      .logo {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+  </style>
+</html>
