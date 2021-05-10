@@ -220,7 +220,7 @@ nav.main_menu>ul>li {
 	color: rgb(255, 255, 255);
 	font-weight: bolder;
 }
-.nav-ul-li>a{
+.nav-ul-li > a{
 	padding: 10px 10px;
 	display: block;
 	font-size: 14px;
@@ -232,7 +232,7 @@ nav.main_menu>ul>li {
 	transition: background 0.3s ease-in-out 0s;
 }
 .img-thumbnail{
-	border: 0;
+	border: 0 !important;
 	margin: 0px !important;
 	padding: 0px !important;
 }

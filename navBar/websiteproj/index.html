@@ -16,7 +16,9 @@
       <div class="container fixed-nav-container clear-padding">
         <div class="nav-row col-lg-12 col-md-12 col-sm-12 clear-margin">
           <!-- logo -->
-          <h1 class="logo col-lg-2 col-md-12 col-sm-12 clear-margin clear-padding">
+          <h1
+            class="logo col-lg-2 col-md-12 col-sm-12 clear-margin clear-padding"
+          >
             <a href="#">
               <img
                 class="col-xs-12 img-thumbnail"
@@ -24,10 +26,17 @@
                 alt="网站名称"
                 title="网站名称"
             /></a>
-            </h1>
+          </h1>
           <!-- navbar -->
+          <!-- 当内容为手机展示的时候,需要进行相应的修改 -->
+          <button id="nav-toggle" value="navbar-button-hide" class="col-xs-12">
+            <i class="glyphicon glyphicon-align-justify"></i>
+          </button>
           <!-- 标签链接 -->
-          <ul class="nav-row col-lg-10 col-md-12 col-sm-12 clear-margin clear-padding">
+          <ul
+            id="nav-ul"
+            class="nav-row col-lg-10 col-md-12 col-sm-12 clear-margin clear-padding"
+          >
             <div class="nav-row col-lg-1">
               <li id="index" class="nav-ul-li col-xs-12">
                 <a href="#">
@@ -46,7 +55,7 @@
                     <div class="sub">About Us</div>
                   </a>
                 </li>
-  
+
                 <!-- 添加行业资质导航标签 -->
                 <li id="aptitude" class="nav-ul-li col-lg-4 col-xs-12">
                   <a href="webhyzz.html">
@@ -54,7 +63,7 @@
                     <div class="sub">Aptitude</div>
                   </a>
                 </li>
-  
+
                 <li id="Product" class="nav-ul-li col-lg-4 col-xs-12">
                   <a href="webproduct.html">
                     产品案例
@@ -69,14 +78,14 @@
                     <div class="sub">Cooperation</div>
                   </a>
                 </li>
-  
+
                 <li id="News" class="nav-ul-li col-lg-4 col-xs-12">
                   <a href="webnews.html">
                     新闻动态
                     <div class="sub fixed-news">News & Events</div>
                   </a>
                 </li>
-  
+
                 <li id="contactus" class="nav-ul-li col-lg-4 col-xs-12">
                   <a href="webcontactus.html">
                     联系我们
@@ -89,7 +98,6 @@
         </div>
       </div>
     </header>
-    
   </body>
   <style>
     /* Header ==========================*/
@@ -102,8 +110,8 @@
 
     h1.logo {
       float: left;
-      line-height:1;
-      z-index:999;
+      line-height: 1;
+      z-index: 999;
     }
 
     /* Main Navigation ==========================*/
@@ -115,14 +123,14 @@
       margin-top: 5px;
     }
     .clear-margin {
-      margin: 0px;
+      margin: 0px !important;
     }
     .clear-padding {
-      padding: 0px;
+      padding: 0px !important;
     }
 
     /* 设定标签中英文文字的格式 */
-    .clear-margin>ul {
+    .clear-margin > ul {
       list-style-type: none;
     }
 
@@ -142,23 +150,23 @@
       margin: 0 0 0 0;
     }
 
-    .nav-row{
-      margin:0px;
+    .nav-row {
+      margin: 0px;
       padding: 0px;
     }
 
-    .nav-ul-li:hover{
+    .nav-ul-li:hover {
       margin-top: -4px;
       border-top: 4px solid #cfcfcf;
       background-color: #04bfea;
       transition: background 0.5s ease-in-out 0s;
     }
-    .nav-ul-li:hover >a{
+    .nav-ul-li:hover > a {
       background-color: #04bfea;
       color: rgb(255, 255, 255);
       font-weight: bolder;
     }
-    .nav-ul-li>a{
+    .nav-ul-li > a {
       padding: 10px 10px;
       display: block;
       font-size: 14px;
@@ -166,28 +174,73 @@
       text-transform: uppercase;
       font-weight: bold;
       text-align: center;
-      text-decoration:none;
+      text-decoration: none;
       transition: background 0.3s ease-in-out 0s;
     }
-    .img-thumbnail{
+    .img-thumbnail {
       border: 0;
       margin: 0px !important;
       padding: 0px !important;
+    }
+    #nav-toggle {
+      display: none;
+    }
+    .nav-display {
+      display: block;
     }
 
     /* #Media Queries
     ================================================== */
 
     /* Smaller than standard 960 (devices and browsers) */
+    @media only screen and(max-width:1200px) {
+      .fixed-news {
+        text-align: center;
+      }
+      #nav-ul {
+        display: block;
+      }
+    }
     @media only screen and (max-width: 959px) {
       .logo {
         text-align: center;
+      }
+      .fixed-news {
+        text-align: center;
+      }
+      #nav-toggle {
+        display: block;
       }
     }
     @media only screen and (max-width: 768px) {
       .logo {
         text-align: center;
       }
+      .fixed-news {
+        text-align: center;
+      }
+      #nav-toggle {
+        display: block;
+      }
+      #nav-ul {
+        display: none;
+      }
     }
   </style>
+  <script>
+    //button id=nav-toggle value=navbar-button-hide/navbar-button-show
+    //button id=nav-ul
+    document.getElementById("nav-toggle").onclick = function () {
+      if (this.value == "navbar-button-hide") {
+        document.getElementById("nav-ul").style.display = "block";
+        this.value = "navbar-button-show";
+      } else if (this.value == "navbar-button-show") {
+        document.getElementById("nav-ul").style.display = "none";
+        this.value = "navbar-button-hide";
+      }
+    };
+    if (window.innerWidth > 960) {
+      document.getElementById("nav-ul").style.display = "block";
+    };
+  </script>
 </html>
