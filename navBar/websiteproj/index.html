@@ -136,6 +136,7 @@
 
     .fixed-news {
       font-size: 10px !important;
+      text-align:center !important;
     }
 
     .sub {
@@ -174,7 +175,7 @@
       text-transform: uppercase;
       font-weight: bold;
       text-align: center;
-      text-decoration: none;
+      text-decoration: none !important;
       transition: background 0.3s ease-in-out 0s;
     }
     .img-thumbnail {
@@ -184,9 +185,6 @@
     }
     #nav-toggle {
       display: none;
-    }
-    .nav-display {
-      display: block;
     }
 
     /* #Media Queries
@@ -228,6 +226,7 @@
     }
   </style>
   <script>
+    //用来控制响应式模版的脚本
     //button id=nav-toggle value=navbar-button-hide/navbar-button-show
     //button id=nav-ul
     document.getElementById("nav-toggle").onclick = function () {
