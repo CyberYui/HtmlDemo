@@ -161,11 +161,9 @@ a.work-name:hover {
 
 h1.logo {
 	float: left;
-	line-height:1.5;
-	margin-top: 5px !important;
-	margin-bottom: 15px !important;
-	width:16% !important;
-}
+	line-height:1;
+	z-index:999;
+  }
 
 /* Main Navigation
 ==========================*/
@@ -179,6 +177,15 @@ nav.main_menu {
 .container.fixed-container {
 	margin-top: 5px;
 }
+.container.fixed-nav-container {
+	margin-top: 5px;
+}
+.clear-margin {
+	margin: 0px;
+}
+.clear-padding {
+	padding: 0px;
+}
 
 nav.main_menu>ul>li {
 	display: block;
@@ -189,27 +196,45 @@ nav.main_menu>ul>li {
 }
 
 /*Change ul's li style*/
-#index{
-	width: 8% !important;
-	margin-left:20px;
+.clear-margin>ul {
+	list-style-type: none;
 }
-#aboutus{
-	width: 10% !important;
+
+.fixed-news {
+	font-size: 10px !important;
 }
-#aptitude{
-	width: 12% !important;
+
+.nav-row{
+	margin:0px;
+	padding: 0px;
 }
-#Product{
-	width: 12% !important;
+
+.nav-ul-li:hover{
+	margin-top: -4px;
+	border-top: 4px solid #cfcfcf;
+	background-color: #04bfea;
+	transition: background 0.5s ease-in-out 0s;
 }
-#cooperation{
-	width: 12% !important;
+.nav-ul-li:hover >a{
+	background-color: #04bfea;
+	color: rgb(255, 255, 255);
+	font-weight: bolder;
 }
-#News{
-	width: 16% !important;
+.nav-ul-li>a{
+	padding: 10px 10px;
+	display: block;
+	font-size: 14px;
+	color: #393939;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	text-decoration:none;
+	transition: background 0.3s ease-in-out 0s;
 }
-#contactus{
-	width: 12% !important;
+.img-thumbnail{
+	border: 0;
+	margin: 0px !important;
+	padding: 0px !important;
 }
 
 nav.main_menu>ul>li>a {
@@ -255,11 +280,11 @@ nav.main_menu>ul>li.current_page_item>a .sub {
 
 .sub {
 	color: #0fa7c9;
-	font-size: 15px;
+	font-size: 13px;
 	font-weight: 600;
 	margin-top: -3px;
 	text-transform: none;
-}
+  }
 
 a.prop-example {
 	font-weight: bold;

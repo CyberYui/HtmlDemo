@@ -12,81 +12,84 @@
 
   <body>
     <!-- header 包含导航菜单 -->
-    <div class="container fixed-nav-container clear-padding">
-      <div class="nav-row col-lg-12 col-md-12 col-sm-12 clear-margin">
-        <!-- logo -->
-        <h1 class="logo col-lg-2 col-md-12 col-sm-12 clear-margin clear-padding">
-          <a href="#">
-            <img
-              class="col-xs-12 img-thumbnail"
-              src="../../imgs/logo_use.png"
-              alt="网站名称"
-              title="网站名称"
-          /></a>
-          </h1>
-        <!-- navbar -->
-        <!-- 标签链接 -->
-        <ul class="nav-row col-lg-10 col-md-12 col-sm-12 clear-margin clear-padding">
-          <div class="nav-row col-lg-1">
-            <li id="index" class="nav-ul-li col-xs-12">
-              <a href="#">
-                首页
-                <div class="sub">Home</div>
-              </a>
-            </li>
-          </div>
-          <!-- <div class="clearfix"></div> -->
-          <!-- 创建用来包裹首页之后6个标签的行块 -->
-          <div class="nav-row col-lg-11 col-md-12">
-            <div id="fixed-ulitem" class="nav-row col-lg-6 col-md-6">
-              <li id="aboutus" class="nav-ul-li col-lg-4 col-xs-12">
-                <a href="webaboutus.html">
-                  关于我们
-                  <div class="sub">About Us</div>
-                </a>
-              </li>
-
-              <!-- 添加行业资质导航标签 -->
-              <li id="aptitude" class="nav-ul-li col-lg-4 col-xs-12">
-                <a href="webhyzz.html">
-                  行业资质
-                  <div class="sub">Aptitude</div>
-                </a>
-              </li>
-
-              <li id="Product" class="nav-ul-li col-lg-4 col-xs-12">
-                <a href="webproduct.html">
-                  产品案例
-                  <div class="sub fixed-news">Product case</div>
+    <header class="header">
+      <div class="container fixed-nav-container clear-padding">
+        <div class="nav-row col-lg-12 col-md-12 col-sm-12 clear-margin">
+          <!-- logo -->
+          <h1 class="logo col-lg-2 col-md-12 col-sm-12 clear-margin clear-padding">
+            <a href="#">
+              <img
+                class="col-xs-12 img-thumbnail"
+                src="../../imgs/logo_use.png"
+                alt="网站名称"
+                title="网站名称"
+            /></a>
+            </h1>
+          <!-- navbar -->
+          <!-- 标签链接 -->
+          <ul class="nav-row col-lg-10 col-md-12 col-sm-12 clear-margin clear-padding">
+            <div class="nav-row col-lg-1">
+              <li id="index" class="nav-ul-li col-xs-12">
+                <a href="#">
+                  首页
+                  <div class="sub">Home</div>
                 </a>
               </li>
             </div>
-            <div class="nav-row col-lg-6 col-md-6">
-              <li id="cooperation" class="nav-ul-li col-lg-4 col-xs-12">
-                <a href="webcooperation.html"
-                  >合作共赢
-                  <div class="sub">Cooperation</div>
-                </a>
-              </li>
-
-              <li id="News" class="nav-ul-li col-lg-4 col-xs-12">
-                <a href="webnews.html">
-                  新闻动态
-                  <div class="sub fixed-news">News & Events</div>
-                </a>
-              </li>
-
-              <li id="contactus" class="nav-ul-li col-lg-4 col-xs-12">
-                <a href="webcontactus.html">
-                  联系我们
-                  <div class="sub">Contact US</div>
-                </a>
-              </li>
+            <!-- <div class="clearfix"></div> -->
+            <!-- 创建用来包裹首页之后6个标签的行块 -->
+            <div class="nav-row col-lg-11 col-md-12">
+              <div id="fixed-ulitem" class="nav-row col-lg-6 col-md-6">
+                <li id="aboutus" class="nav-ul-li col-lg-4 col-xs-12">
+                  <a href="webaboutus.html">
+                    关于我们
+                    <div class="sub">About Us</div>
+                  </a>
+                </li>
+  
+                <!-- 添加行业资质导航标签 -->
+                <li id="aptitude" class="nav-ul-li col-lg-4 col-xs-12">
+                  <a href="webhyzz.html">
+                    行业资质
+                    <div class="sub">Aptitude</div>
+                  </a>
+                </li>
+  
+                <li id="Product" class="nav-ul-li col-lg-4 col-xs-12">
+                  <a href="webproduct.html">
+                    产品案例
+                    <div class="sub fixed-news">Product case</div>
+                  </a>
+                </li>
+              </div>
+              <div class="nav-row col-lg-6 col-md-6">
+                <li id="cooperation" class="nav-ul-li col-lg-4 col-xs-12">
+                  <a href="webcooperation.html"
+                    >合作共赢
+                    <div class="sub">Cooperation</div>
+                  </a>
+                </li>
+  
+                <li id="News" class="nav-ul-li col-lg-4 col-xs-12">
+                  <a href="webnews.html">
+                    新闻动态
+                    <div class="sub fixed-news">News & Events</div>
+                  </a>
+                </li>
+  
+                <li id="contactus" class="nav-ul-li col-lg-4 col-xs-12">
+                  <a href="webcontactus.html">
+                    联系我们
+                    <div class="sub">Contact US</div>
+                  </a>
+                </li>
+              </div>
             </div>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </div>
-    </div>
+    </header>
+    
   </body>
   <style>
     /* Header ==========================*/
@@ -119,7 +122,7 @@
     }
 
     /* 设定标签中英文文字的格式 */
-    ul {
+    .clear-margin>ul {
       list-style-type: none;
     }
 
@@ -165,13 +168,6 @@
       text-align: center;
       text-decoration:none;
       transition: background 0.3s ease-in-out 0s;
-    }
-    .sub{
-      color: #0fa7c9;
-      font-size: 13px;
-      font-weight: 600;
-      margin-top: -3px;
-      text-transform: none;
     }
     .img-thumbnail{
       border: 0;
