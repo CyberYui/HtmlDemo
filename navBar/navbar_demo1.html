@@ -10,9 +10,7 @@
       href="../uiStruction/bootstrap-3.4.1-dist/css/bootstrap.min.css"
     />
     <script src="../uiStruction/jQuery-3.6.0.js"></script>
-    <script
-      src="../uiStruction/bootstrap-3.4.1-dist/js/bootstrap.min.js"
-    ></script>
+    <script src="../uiStruction/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -43,14 +41,43 @@
       </div>
       <!-- 通过使用 col-md-offset-* 可以设置向右偏移几列内容 -->
       <div class="row">
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-lg-offset-3">1111</div>
+        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-lg-offset-3">
+          1111
+        </div>
         <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
+        <div class="row">
+          <div class="col-lg-5">2222</div>
+          <!-- 由于上面的内容偏移3列,所以下面这一部分理应在第二排 -->
+          <div class="col-lg-5">2222</div>
+        </div>
       </div>
     </div>
-    <div class="row"></div>
-    <div class="row">
-      
+    <!-- 另起一行用于测试响应式模版 -->
+    <div class="container fixed-container">
+      <div class="row">
+        <!-- logo -->
+        <div class="row col-lg-2 col-sm-12 clear-margin">
+          <div class="logo">logo</div>
+        </div>
+        <!-- navbar -->
+        <ul class="row col-lg-10 col-sm-12 clear-margin">
+          <li class="col-lg-1 col-sm-2">首页</li>
+          <div class="row col-lg-11 col-sm-10">
+            <div class="row col-lg-5 col-sm-5">
+              <li class="col-lg-4 col-sm-4 col-xs-12">关于我们</li>
+              <li class="col-lg-4 col-sm-4 col-xs-12">行业资质</li>
+              <li class="col-lg-4 col-sm-4 col-xs-12">产品案例</li>
+            </div>
+            <div class="row col-lg-6 col-sm-5">
+              <li class="col-lg-4 col-sm-4 col-xs-12">合作共赢</li>
+              <li class="col-lg-4 col-sm-4 col-xs-12">新闻动态</li>
+              <li class="col-lg-4 col-sm-4 col-xs-12">联系我们</li>
+            </div>
+          </div>
+        </ul>
+      </div>
     </div>
+    <!-- last row -->
   </body>
   <style rel="stylesheet">
     body {
@@ -62,6 +89,16 @@
       border-width: 1px;
       border-color: red;
       background-color: white;
+    }
+
+    .container.fixed-container {
+      margin-top: 5px;
+    }
+    .clear-margin {
+      margin: 0 0 0 0;
+    }
+    ul {
+      list-style-type: none;
     }
   </style>
 </html>
