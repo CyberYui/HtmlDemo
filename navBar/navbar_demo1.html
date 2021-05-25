@@ -4,209 +4,166 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NavbarTest</title>
+    <title>Navbar-demo1</title>
     <link
       rel="stylesheet"
+      type="text/css"
       href="../uiStruction/bootstrap-3.4.1-dist/css/bootstrap.min.css"
     />
-    <script src="../uiStruction/jQuery-3.6.0.js"></script>
-    <script src="../uiStruction/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <!-- navbar1 -->
     <div class="container">
-      <!-- 要几行就在这里写几个类为 row 的 div -->
-      <!-- 
-        关于各种宽度:
-        col-xs-* 手机的竖屏 <768px
-        col-sm-* 手机的横屏 768px~992px
-        col-md-* 平板的屏幕 992px~1200px
-        col-lg-* 超大额屏幕 >1200px
-       -->
-      <div class="row" style="display: none;">
-        <!-- 通过设定不同大小屏幕的栅格模式,就表示了每列包含几小列 -->
-        <!-- 比如 col-md-2 就代表总共12列除以2,即每行显示6列内容 -->
-        <!-- 同理 col-xs-6 就代表总共12列除以6,即每行显示2列内容 -->
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
-      </div>
-      <!-- 通过使用 col-md-offset-* 可以设置向右偏移几列内容 -->
-      <div class="row" style="display: none;">
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-lg-offset-3">
-          1111
+      <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Dropdown <span class="caret"></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">1111</div>
-        <div class="row">
-          <div class="col-lg-5">2222</div>
-          <!-- 由于上面的内容偏移3列,所以下面这一部分理应在第二排 -->
-          <div class="col-lg-5">2222</div>
+      </nav>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active left">
+          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item next left">
+          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="container">
+        <div id="first-row" class="row col-md-12">
+          <p>abc</p>
+        </div>
+        <div id="second-row" class="row col-md-12">
+          <p>123</p>
+        </div>
+        <div id="third-row" class="row col-md-12">
+          <p>玩玩玩</p>
+        </div>
+        <div id="fourth-row" class="row col-md-12">
+          <p>1231231</p>
         </div>
       </div>
     </div>
-    <!-- 测试响应式模版 -->
-    <div class="container fixed-nav-container clear-padding">
-      <div class="row col-lg-12 col-md-12 col-sm-12 clear-margin">
-        <!-- logo -->
-        <h1 class="logo col-lg-2 col-md-12 col-sm-12 clear-margin clear-padding">
-          <a href="#">
-            <img
-              class="col-xs-12 img-thumbnail"
-              src="../imgs/logo_use.png"
-              alt="网站名称"
-              title="网站名称"
-          /></a>
-          </h1>
-        <!-- navbar -->
-        <!-- 标签链接 -->
-        <ul class="row col-lg-10 col-md-12 col-sm-12 clear-margin clear-padding">
-          <div class="row col-lg-1">
-            <li id="index" class="col-xs-12">
-              <a href="#">
-                首页
-                <div class="sub">Home</div>
-              </a>
-            </li>
-          </div>
-          <!-- <div class="clearfix"></div> -->
-          <!-- 创建用来包裹首页之后6个标签的行块 -->
-          <div class="row col-lg-11 col-md-12">
-            <div id="fixed-ulitem" class="row col-lg-6 col-md-6">
-              <li id="aboutus" class="col-lg-4 col-xs-12">
-                <a href="webaboutus.html">
-                  关于我们
-                  <div class="sub">About Us</div>
-                </a>
-              </li>
-
-              <!-- 添加行业资质导航标签 -->
-              <li id="aptitude" class="col-lg-4 col-xs-12">
-                <a href="webhyzz.html">
-                  行业资质
-                  <div class="sub">Aptitude</div>
-                </a>
-              </li>
-
-              <li id="Product" class="col-lg-4 col-xs-12">
-                <a href="webproduct.html">
-                  产品案例
-                  <div class="sub fixed-news">Product case</div>
-                </a>
-              </li>
-            </div>
-            <div class="row col-lg-6 col-md-6">
-              <li id="cooperation" class="col-lg-4 col-xs-12">
-                <a href="webcooperation.html"
-                  >合作共赢
-                  <div class="sub">Cooperation</div>
-                </a>
-              </li>
-
-              <li id="News" class="col-lg-4 col-xs-12">
-                <a href="webnews.html">
-                  新闻动态
-                  <div class="sub fixed-news">News & Events</div>
-                </a>
-              </li>
-
-              <li id="contactus" class="col-lg-4 col-xs-12">
-                <a href="webcontactus.html">
-                  联系我们
-                  <div class="sub">Contact US</div>
-                </a>
-              </li>
-            </div>
-          </div>
-        </ul>
-      </div>
-    </div>
-    <!-- last row -->
+    <script
+      type="text/javascript"
+      src="../uiStruction/jQuery-3.6.0.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../uiStruction/bootstrap-3.4.1-dist/js/bootstrap.min.js"
+    ></script>
+    <footer>
+      <style type="text/css">
+        body {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          background-image: url(../imgs/backgroundIMG/double-bubble-dark/double-bubble-dark.png);
+          background-repeat: repeat;
+          background-size: auto;
+        }
+        #first-row {
+          border-radius: 5px;
+          background-color: brown;
+        }
+        #second-row {
+          border-radius: 5px;
+          background-color: aqua;
+        }
+        #third-row {
+          border-radius: 5px;
+          background-color: aquamarine;
+        }
+        #fourth-row {
+          border-radius: 5px;
+          background-color: bisque;
+        }
+      </style>
+    </footer>
   </body>
-  <style rel="stylesheet">
-    body {
-      background-image: url("../imgs/backgroundIMG/double-bubble-dark/double-bubble-dark.png");
-      background-color: antiquewhite;
-    }
-    div {
-      border-style: solid;
-      border-width: 1px;
-      border-color: red;
-      background-color: white;
-    }
-
-    h1.logo {
-      float: left;
-      line-height:1;
-      z-index:999;
-    }
-
-    .container.fixed-nav-container {
-      margin-top: 5px;
-    }
-    .clear-margin {
-      margin: 0px;
-    }
-    .clear-padding {
-      padding: 0px;
-    }
-    .row{
-      margin:0px;
-      padding: 0px;
-    }
-    ul {
-      list-style-type: none;
-    }
-    li:hover {
-      margin-top: -4px;
-      border-top: 4px solid #cfcfcf;
-      background-color: #04bfea;
-      transition: background 0.5s ease-in-out 0s;
-    }
-    li:hover > a {
-      background-color: #04bfea;
-      color: rgb(255, 255, 255);
-      font-weight: bolder;
-    }
-    a {
-      padding: 10px 10px;
-      display: block;
-      font-size: 14px;
-      color: #393939;
-      text-transform: uppercase;
-      font-weight: bold;
-      text-align: center;
-      transition: background 0.3s ease-in-out 0s;
-    }
-    a > div {
-      color: #0fa7c9;
-      font-size: 13px;
-      font-weight: 600;
-      margin-top: -3px;
-      text-transform: none;
-    }
-    .img-thumbnail{
-      border: 0;
-      margin: 0px !important;
-      padding: 0px !important;
-    }
-
-    @media only screen and (max-width: 959px) {
-      .logo {
-        text-align: center;
-      }
-    }
-    @media only screen and (max-width: 768px) {
-      .logo {
-        text-align: center;
-      }
-    }
-  </style>
 </html>
