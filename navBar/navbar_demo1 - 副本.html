@@ -14,8 +14,11 @@
   <body>
     <!-- navbar1 -->
     <div class="container">
-      <nav class="navbar navbar-inverse navbar-static-top" style="border-bottom-left-radius: 8px;border-bottom-right-radius: 8px;">
-        <div class="container">
+      <nav
+        class="navbar navbar-inverse navbar-static-top"
+        style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px"
+      >
+        <div class="container row">
           <div class="navbar-header">
             <button
               type="button"
@@ -264,6 +267,24 @@
         .myOwnNavItem:hover {
           color: antiquewhite;
           border-radius: 4px;
+        }
+        @media only screen and (max-width : 991px) {
+          #logo{
+            display: none;
+          }
+          .myOwnNavItem{
+            font-size: 14px;
+            text-align: left;
+          }
+        }
+        @media only screen and (min-width : 992px) and (max-width : 1200px) {
+          #logo{
+            display: block;
+          }
+          .myOwnNavItem{
+            font-size: 14px;
+            text-align: left;
+          }
         }
       </style>
     </footer>
