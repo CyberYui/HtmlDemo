@@ -35,7 +35,7 @@
             </button>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
+            <ul id="myNavbarList" class="nav navbar-nav">
               <li id="logo">
                 <a href="index.html"
                   ><img
@@ -286,13 +286,16 @@
           background-color: transparent !important;
           border-color: transparent !important;
         }
-        .myNavButton:focus{
+        .myNavButton:focus {
           background-image: none !important;
           background-color: transparent !important;
           border-color: transparent !important;
         }
-        .myNavButton:focus-visible{
+        .myNavButton:focus-visible {
           outline: 0 !important;
+        }
+        #myNavbarList > li.active {
+          background-color: bisque;
         }
         @media only screen and (max-width: 991px) {
           #logo {
