@@ -22,7 +22,7 @@
           <div class="navbar-header">
             <button
               type="button"
-              class="navbar-toggle collapsed"
+              class="navbar-toggle collapsed myNavButton"
               data-toggle="collapse"
               data-target="#navbar"
               aria-expanded="false"
@@ -91,7 +91,6 @@
       </nav>
     </div>
     <!-- navbar1 end -->
-    
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -269,6 +268,31 @@
         .myOwnNavItem:hover {
           color: antiquewhite;
           border-radius: 4px;
+        }
+        span.icon-bar {
+          background-color: black !important;
+        }
+        .myNavButton {
+          margin-right: 50px !important;
+          border-color: none !important;
+          box-shadow: none !important;
+          -webkit-box-shadow: none !important;
+        }
+        .myNavButton:after {
+          content: none !important;
+        }
+        .myNavButton:hover {
+          background-image: none !important;
+          background-color: transparent !important;
+          border-color: transparent !important;
+        }
+        .myNavButton:focus{
+          background-image: none !important;
+          background-color: transparent !important;
+          border-color: transparent !important;
+        }
+        .myNavButton:focus-visible{
+          outline: 0 !important;
         }
         @media only screen and (max-width: 991px) {
           #logo {
