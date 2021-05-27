@@ -15,7 +15,7 @@
     <!-- navbar1 -->
     <div class="container">
       <nav
-        class="navbar navbar-inverse navbar-static-top"
+        class="navbar navbar-static-top"
         style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px"
       >
         <div class="container row">
@@ -266,11 +266,16 @@
           transform: all 1s ease-in-out;
         }
         .myOwnNavItem:hover {
-          color: antiquewhite;
+          background-color: #ffcef3;
+          color: #575151;
           border-radius: 4px;
         }
         span.icon-bar {
           background-color: black !important;
+        }
+        nav.navbar.navbar-static-top {
+          margin-bottom: 0;
+          background-color: #fdfdfd;
         }
         .myNavButton {
           margin-right: 50px !important;
@@ -295,7 +300,9 @@
           outline: 0 !important;
         }
         #myNavbarList > li.active {
-          background-color: bisque;
+          background-color: #cabbe9;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
         }
         @media only screen and (max-width: 991px) {
           #logo {
