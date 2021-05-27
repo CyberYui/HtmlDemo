@@ -37,7 +37,7 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul id="myNavbarList" class="nav navbar-nav">
               <li id="logo">
-                <a href="index.html"
+                <a href="index.html" class="myLogoA"
                   ><img
                     src="../imgs/logo_use.png"
                     alt="160*60"
@@ -92,7 +92,11 @@
     </div>
     <!-- navbar1 end -->
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="display: none;">
+    <div
+      id="myCarousel"
+      class="carousel slide"
+      data-ride="carousel"
+    >
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class=""></li>
@@ -194,7 +198,7 @@
       </a>
     </div>
 
-    <div class="container" style="display: none;">
+    <div class="container">
       <div class="container">
         <div id="first-row" class="row col-md-12">
           <p>abc</p>
@@ -248,9 +252,9 @@
         }
         .myLogoImg {
           border: 0;
-          height: 30px;
+          height: 46px;
           width: 160px;
-          margin: 0 10px 0 10px;
+          margin: 5px 10px 5px 10px;
           padding: 0;
         }
         .myOwnNavItem {
@@ -270,12 +274,15 @@
           color: black;
           border-radius: 4px;
         }
+        a.myLogoA {
+          padding: 0px 15px !important;
+        }
         span.icon-bar {
           background-color: black !important;
         }
         nav.navbar.navbar-static-top {
           margin-bottom: 0;
-          background-color: transparent;
+          background-color: white;
         }
         .myNavButton {
           margin-right: 50px !important;
@@ -299,7 +306,7 @@
         .myNavButton:focus-visible {
           outline: 0 !important;
         }
-        #myNavbarList > li{
+        #myNavbarList > li {
           margin-top: 5px;
         }
         #myNavbarList > li.active {
@@ -307,12 +314,13 @@
           color: #575151;
           border-radius: 5px;
         }
-        #logo{
+        #logo {
           margin-top: 0 !important;
         }
-        #logo:hover{
+        #logo:hover {
           background-color: transparent !important;
-        }#logo>a:hover{
+        }
+        #logo > a:hover {
           background-color: transparent !important;
         }
         @media only screen and (max-width: 991px) {
