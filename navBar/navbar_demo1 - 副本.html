@@ -92,7 +92,7 @@
     </div>
     <!-- navbar1 end -->
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="display: none;">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class=""></li>
@@ -194,7 +194,7 @@
       </a>
     </div>
 
-    <div class="container">
+    <div class="container" style="display: none;">
       <div class="container">
         <div id="first-row" class="row col-md-12">
           <p>abc</p>
@@ -255,7 +255,6 @@
         }
         .myOwnNavItem {
           border-radius: 4px;
-          margin-top: 5px;
           margin-left: 10px;
           margin-right: 10px;
           font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro",
@@ -264,10 +263,11 @@
           font-size: 20px;
           text-align: center;
           transform: all 1s ease-in-out;
+          color: #f74f85;
         }
         .myOwnNavItem:hover {
-          background-color: #ffcef3;
-          color: #575151;
+          background-color: #dcd8d8 !important;
+          color: black;
           border-radius: 4px;
         }
         span.icon-bar {
@@ -275,7 +275,7 @@
         }
         nav.navbar.navbar-static-top {
           margin-bottom: 0;
-          background-color: #fdfdfd;
+          background-color: #f6f7f7;
         }
         .myNavButton {
           margin-right: 50px !important;
@@ -299,10 +299,21 @@
         .myNavButton:focus-visible {
           outline: 0 !important;
         }
+        #myNavbarList > li{
+          margin-top: 5px;
+        }
         #myNavbarList > li.active {
-          background-color: #cabbe9;
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 5px;
+          background-color: #dcd8d8;
+          color: #575151;
+          border-radius: 5px;
+        }
+        #logo{
+          margin-top: 0 !important;
+        }
+        #logo:hover{
+          background-color: transparent !important;
+        }#logo>a:hover{
+          background-color: transparent !important;
         }
         @media only screen and (max-width: 991px) {
           #logo {
