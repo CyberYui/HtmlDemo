@@ -6,17 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>只使用HTML+CSS完成的一种简单好看的导航栏点击特效</title>
     <!-- 下载使用font-awesome-5.15.4版本的UI框架 -->
-    <link rel="stylesheet" href="../uiStruction/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="../uiStruction/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <!-- 引入我自用的css文件 -->
+    <link
+      rel="stylesheet"
+      href="../uiStruction/navClickDemo_001/css/navClickDemo_001.css"
+    />
   </head>
   <body>
-    <header class="wrpper">
+    <header class="wrapper">
       <nav>
-        <a href="#"><i class="fa fa-home"></i>首页</a>
-        <a href="#">用户</a>
-        <a href="#">消息</a>
-        <a href="#">收藏</a>
-        <a href="#">创作</a>
-        <a href="#">关于我</a>
+        <input type="radio" name="tab" id="home" checked />
+        <input type="radio" name="tab" id="user" />
+        <input type="radio" name="tab" id="bell" />
+        <input type="radio" name="tab" id="star" />
+        <input type="radio" name="tab" id="aboutme" />
+        <div class="tab"></div>
+        <label for="home" class="home"
+          ><a href="#"><i class="fa fa-home"></i>首页</a></label
+        >
+        <label for="user" class="user"
+          ><a href="#"><i class="fa fa-user"></i>用户</a></label
+        >
+        <label for="bell" class="bell"
+          ><a href="#"><i class="fa fa-bell"></i>消息</a></label
+        >
+        <label for="star" class="star"
+          ><a href="#"><i class="fa fa-star"></i>收藏</a></label
+        >
+        <label for="aboutme" class="aboutme"
+          ><a href="#"><i class="fa fa-archway"></i>关于我</a></label
+        >
       </nav>
     </header>
   </body>

@@ -1,0 +1,95 @@
+:root {
+  --navheight: 40px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #bdbdbd;
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  background-color: white;
+}
+
+.wrapper {
+  height: var(--navheight);
+  line-height: var(--navheight);
+  border-radius: var(--navheight);
+  width: 55vw;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.wrapper nav {
+  display: flex;
+  position: relative;
+}
+
+.wrapper nav label {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  z-index: 2;
+  color: #666;
+}
+
+.wrapper nav label a {
+  color: #666;
+  pointer-events: none;
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+.wrapper nav label i {
+  margin: 0 5px;
+}
+
+#home:checked ~ label.home a,
+#user:checked ~ label.user a,
+#bell:checked ~ label.bell a,
+#star:checked ~ label.star a,
+#aboutme:checked ~ label.aboutme a {
+  color: #fff;
+}
+
+.wrapper nav .tab {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #fc6076 0%, #ff9a44 100%);
+  border-radius: var(--navheight);
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper nav input {
+  display: none;
+}
+
+#user:checked ~ .tab {
+  left: 20%;
+}
+
+#bell:checked ~ .tab {
+  left: 40%;
+}
+
+#star:checked ~ .tab {
+  left: 60%;
+}
+
+#aboutme:checked ~ .tab {
+  left: 80%;
+}
