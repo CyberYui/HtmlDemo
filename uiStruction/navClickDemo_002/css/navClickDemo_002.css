@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(#99f, #f99);
+}
+
+body,
+.navbar,
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  position: relative;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+.navbar input {
+  width: 40px;
+  height: 40px;
+  /* 鼠标移入变小手 */
+  cursor: pointer;
+  opacity: 0;
+}
+
+.navbar span {
+  position: absolute;
+  left: 25px;
+  /* calc方法进行计算 */
+  top: calc(50% - 10px);
+  width: 30px;
+  height: 4px;
+  border-radius: 15px;
+  background-color: #999;
+  /* 解决复选框和span重叠的问题 */
+  pointer-events: none;
+  /* 展开和收起的过渡效果刚刚好相反 */
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out 0.3s;
+}
+
+/* 第二条线在navbar元素中的第三位置 */
+.navbar span:nth-child(3) {
+  top: calc(50% + 6px);
+}
+
+.navbar ul {
+  width: 0;
+  /* 溢出内容隐藏 */
+  overflow: hidden;
+  /* 由于文字自动换行导致盒子变扁形而不是圆形,不让文字换行即可 */
+  white-space: nowrap;
+  transition: all 0.5s;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  /* 取消链接下划线 */
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.navbar ul li a:hover {
+  color: #fb7299;
+}
+
+/* checked表示选中状态 */
+/* ~ 是兄弟选择器,即在这里查找同一级的ul元素 */
+.navbar input:checked ~ ul {
+  width: 350px;
+}
+
+.navbar input:checked ~ span:nth-child(2) {
+  top: calc(50% - 2px);
+  transform: rotate(-45deg);
+  background-color: #fb7299;
+  /* top和变化按顺序进行动画 */
+  transition: top 0.3s ease-in-out, transform 0.3s ease-in-out 0.3s;
+}
+
+.navbar input:checked ~ span:nth-child(3) {
+  top: calc(50% - 2px);
+  transform: rotate(45deg);
+  background-color: #fb7299;
+  transition: top 0.3s ease-in-out, transform 0.3s ease-in-out 0.3s;
+}
