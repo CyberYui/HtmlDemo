@@ -4,7 +4,7 @@
   margin: 0;
 }
 body {
-  /* 溢出隐藏 为了视频效果 可以不加 */
+  /* 溢出隐藏 */
   overflow: hidden;
   /* 让页面占浏览器可视区域的高度 */
   height: 100vh;
@@ -27,7 +27,8 @@ body {
 .navbar label {
   /* 绝对定位 */
   position: absolute;
-  /* clac方法自动计算 让元素垂直居中 */
+  /* clac方法自动计算 */
+  /* 让元素垂直居中 */
   top: calc(50% - 25px);
   right: 50px;
   width: 50px;
@@ -65,8 +66,9 @@ body {
 .navbar label::after {
   top: calc(50% + 6px);
 }
-/* 然后定义label元素的动画效果 */
-/* 对了:checked是判断复选框是否被选中 + 是相邻兄弟选择器 找最近的下一次label元素 */
+/* 定义label元素的动画效果 */
+/* checked是判断复选框是否被选中 */
+/* + 是相邻兄弟选择器 找最近的下一次label元素 */
 .navbar input:checked + label {
   /* 加了inset就是内部阴影 啥都不写就是默认的外部阴影(outset) */
   box-shadow: 0 0 0 #fff, 0 0 0 #fff, 5px 3px 6px 1px #c6d9ed inset,
@@ -83,15 +85,15 @@ body {
   /* 顺时针旋转45度 */
   transform: rotate(45deg);
   /* 定义过渡效果 */
-  /* 先执行top的变化 然后在.3s后执行transform转换 ease-out是从快速到慢速的过程 */
+  /* 先执行top的变化 0.3s后执行transform转换 ease-out是从快速到慢速的过程 */
   transition: top 0.3s ease-out, transform 0.3s ease-out 0.3s;
 }
-/* 我们先写移动端的导航栏样式 start */
+/* 先写移动端的导航栏样式 start */
 .navbar ul {
   position: relative;
   top: 100px;
   width: 100%;
-  /* 元素的不透明度 为0 就是完全透明 */
+  /* 元素的不透明度 0就是完全透明 */
   opacity: 0;
   /* 让元素缩放到0 就是直接隐藏 */
   transform: scaleY(0);
@@ -127,10 +129,9 @@ body {
   opacity: 1;
   transform: scaleY(1);
 }
-/* 我们先写移动端的导航栏样式 end */
+/* 移动端的导航栏样式 end */
 
-/* 继续写pc端的样式 start */
-/* 就不演示了 直接看成品 */
+/* pc端的样式 start */
 /* 媒体查询 如果页面的宽度到了992px之后就执行里面的代码 */
 @media (min-width: 992px) {
   .navbar label {
@@ -150,7 +151,8 @@ body {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
-    /* 这里这着两个值是为了避免复选框未选中状态下 ul会继承移动端的属性 所以这里替换一下 */
+    /* 这里这着两个值是为了避免复选框未选中状态下ul会继承移动端的属性 */
+    /* 所以这里替换一下 */
     opacity: 1;
     transform: scaleY(1);
   }
@@ -169,4 +171,4 @@ body {
       -5px -3px 6px 1px #fff inset;
   }
 }
-/* 继续写pc端的样式 end */
+/* pc端样式 end */
