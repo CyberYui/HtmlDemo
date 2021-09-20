@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../uiStruction/navClickDemo_006/css/navClickDemo_006.css">
-</head>
-<body>
-    <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-    </ul>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>一个基本的使用各种框架的导航栏例子</title>
+    <link
+      rel="stylesheet"
+      href="../uiStruction/navClickDemo_006/css/navClickDemo_006.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../uiStruction/fontawesome-free-5.15.4-web/css/all.css"
+    />
+    <script src="../uiStruction/jQuery-3.6.0.js"></script>
+  </head>
+  <body>
+    <div class="middle">
+      <div class="sm-container">
+        <i class="show-btn fas fa-user"></i>
+        <div class="sm-menu">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $(".show-btn").click(function () {
+      $(".sm-menu").fadeToggle("fast");
+    });
+  </script>
 </html>
