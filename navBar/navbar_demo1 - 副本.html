@@ -98,12 +98,31 @@
       <img src="../imgs/qrcode.png" />
       <div id="NavCon">
         <a href="#top" target="_self"
-          ><i class="glyphicon glyphicon-arrow-up" style="color: black"></i> back
-          to top <i class="glyphicon glyphicon-arrow-up" style="color: black"></i></a
-        >
+          ><i class="glyphicon glyphicon-arrow-up" style="color: black"></i>
+          back to top
+          <i class="glyphicon glyphicon-arrow-up" style="color: black"></i
+        ></a>
       </div>
     </div>
     <!-- 二维码窗结束 -->
+
+    <!-- 添加关于我们的内容 -->
+    <div class="container">
+      <div class="about-user">
+        <h1>青海高瞻智库研究院</h1>
+        <div style="text-align: left">
+          <p>
+            青海高瞻智库研究院是依托航源信息科技部、经济发展研究部、君源人力资源服务部三家机构整合组建的一个综合性研究咨询机构。
+          </p>
+          <p>
+            智库坚持正确的政治方向，以“经略发展、经世致用”为理念，以“和合、独立、客观”为宗旨，承担政治、经济、社会、文化、生态各领域重大课题，以前瞻思维和明晰判断，主动建言献策，为地方政府和企事业单位提供战略思路、顶层设计、政策指导、产业规划、信息技术、教育咨询、人力资源等。
+            是具有全局性、建设性、系统性、专业性等多元化服务机构。
+          </p>
+        </div>
+        <img class="img-responsive center-block" src="../imgs/gzzkabout.png" alt="400width" style="width: 400px; height: auto;"/>
+      </div>
+    </div>
+    <!-- end -->
 
     <script
       type="text/javascript"
@@ -125,7 +144,34 @@
           background-repeat: repeat;
           background-size: auto;
         }
-
+        /* 写死内容的相关css */
+        .about-user {
+          position: relative;
+          margin: 0 0 50px 0;
+          padding: 20px 20px 3px;
+          background: #fff;
+          background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(2%, #ffffff),
+            color-stop(100%, #fbfbfb)
+          );
+          background: -webkit-linear-gradient(top, #ffffff 2%, #fbfbfb 100%);
+          background: linear-gradient(to bottom, #ffffff 2%, #fbfbfb 100%);
+          border: 1px solid #e2e2e2;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.03);
+        }
+        .about-user h1 {
+          
+          margin: 0;
+          line-height: 1.5;
+          text-align: center;
+        }
+        .about-user p {
+          text-indent: 2em;
+        }
+        /* 写死内容的相关css end */
         #NavTop {
           width: 153px;
           height: 173px;
@@ -137,7 +183,6 @@
           top: 150px;
           background-color: #dcd8d8;
         }
-
         #NavCon {
           width: 153px;
           height: 30px;
@@ -145,8 +190,7 @@
           cursor: pointer;
           text-align: center;
         }
-
-        #NavCon > a{
+        #NavCon > a {
           text-transform: uppercase;
           color: black;
           text-decoration: none;
@@ -242,6 +286,7 @@
         #logo:hover {
           background-color: transparent !important;
         }
+
         @media only screen and (max-width: 991px) {
           #logo {
             display: none;
