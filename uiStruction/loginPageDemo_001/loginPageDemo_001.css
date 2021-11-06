@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: antiquewhite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.content::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 300%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(25, 0, 255),
+    rgb(111, 0, 255),
+    rgb(242, 0, 250)
+  );
+  filter: blur(4px);
+  animation: bg-anim 10s alternate infinite linear;
+}
+
+@keyframes bg-anim {
+  from {
+    left: 0;
+  }
+  to {
+    left: -200%;
+  }
+}
+
+.login-box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(74, 0, 170, 0.3);
+  border-radius: 30px;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-box > h1 {
+  margin: 50px 0 10px 0;
+  font-size: 64px;
+}
+
+.output-frame {
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+
+  display: flex;
+}
+
+.output-frame > label {
+  font-size: 16px;
+  width: 64px;
+  background-color: rgba(212, 0, 219, 0.6);
+  border-radius: 40px 10px 10px 40px;
+  text-indent: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.output-frame > input {
+  flex: 1;
+  width: 0;
+  margin-left: 6px;
+  padding: 0 20px 0 10px;
+  border-radius: 10px 40px 40px 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  background-color: rgba(74, 0, 170, 0.3);
+  color: #fff;
+}
+
+.output-frame > input:focus {
+  color: #000;
+  background-color: #fff;
+}
+
+.login-btn {
+  margin-top: 40px;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  background-color: rgba(212, 0, 219, 0.6);
+  color: #fff;
+  border-radius: 40px;
+}
+
+.login-btn:hover {
+  background-color: rgba(212, 0, 219, 0.8);
+}
