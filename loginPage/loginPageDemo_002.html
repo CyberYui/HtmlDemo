@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,user-scalable=no,viewport-fit=cover,initial-scale=1"
+    />
+    <title>超萌猫头鹰登陆页面</title>
+    <link
+      rel="stylesheet"
+      href="../uiStruction/loginPageDemo_002/loginPageDemo_002.css"
+    />
+  </head>
+  <body>
+    <div id="login">
+      <div class="wrapper">
+        <div class="login">
+          <form action="#" method="post" class="container offset1 loginform">
+            <div id="owl-login">
+              <div class="hand"></div>
+              <div class="hand hand-r"></div>
+              <div class="arms">
+                <div class="arm"></div>
+                <div class="arm arm-r"></div>
+              </div>
+            </div>
+            <div class="pad">
+              <input
+                type="hidden"
+                name="_csrf"
+                value="9IAtUxV2CatyxHiK2LxzOsT6wtBE6h8BpzOmk="
+              />
+              <div class="control-group">
+                <div class="controls">
+                  <label for="email" class="control-label"></label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    tabindex="1"
+                    autofocus="autofocus"
+                    class="form-control input-medium"
+                  />
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <label for="password" class="control-label"></label>
+                  <input
+                    id="password"
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    tabindex="2"
+                    class="form-control input-medium"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <a href="#" tabindex="5" class="btn pull-left btn-link text-muted"
+                >Forgot password?</a
+              ><a href="#" tabindex="6" class="btn btn-link text-muted"
+                >Sign Up</a
+              >
+              <button type="submit" tabindex="4" class="btn btn-primary">
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.getElementById("password").onfocus = function () {
+            document.getElementById("owl-login").classList.add("password");
+          };
+          document.getElementById("password").onblur = function () {
+            document.getElementById("owl-login").classList.remove("password");
+          };
+        });
+      </script>
+    </div>
+  </body>
+</html>
