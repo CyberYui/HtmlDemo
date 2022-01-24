@@ -14,3 +14,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.nav {
+  width: 110px;
+  height: 820px;
+  background: rgba(0, 0, 0, 0.8);
+}
