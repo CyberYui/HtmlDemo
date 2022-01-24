@@ -16,7 +16,15 @@
 }
 
 .nav {
-  width: 110px;
+  /* width: 110px; */
+  width: 280px;
   height: 820px;
   background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
 }
+
+/* .nav:hover{
+  width: 280px;
+} */
