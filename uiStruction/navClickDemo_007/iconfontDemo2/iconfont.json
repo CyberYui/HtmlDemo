@@ -1,0 +1,93 @@
+{
+  "id": "3036839",
+  "name": "侧边栏菜单",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "493213",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e780",
+      "unicode_decimal": 59264
+    },
+    {
+      "icon_id": "629333",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "3705476",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "3825792",
+      "name": "设置",
+      "font_class": "shezhi1",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "6403481",
+      "name": "dashboard",
+      "font_class": "dashboard",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "6822916",
+      "name": "wechat",
+      "font_class": "wechat",
+      "unicode": "e6ca",
+      "unicode_decimal": 59082
+    },
+    {
+      "icon_id": "7257000",
+      "name": "设置",
+      "font_class": "shezhi2",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "8666839",
+      "name": "邮件",
+      "font_class": "youjian",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "8679363",
+      "name": "聊天",
+      "font_class": "liaotian",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "10156124",
+      "name": "菜单",
+      "font_class": "caidan1",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "17718103",
+      "name": "摄像",
+      "font_class": "shexiang",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "18051173",
+      "name": "dashboard",
+      "font_class": "Dashboard",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    }
+  ]
+}

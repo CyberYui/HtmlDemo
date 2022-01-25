@@ -1,0 +1,100 @@
+{
+  "id": "2387025",
+  "name": "微信对话框",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4088604",
+      "name": "摄像",
+      "font_class": "shexiang",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "5278326",
+      "name": "笑脸",
+      "font_class": "xiaolian",
+      "unicode": "e6e9",
+      "unicode_decimal": 59113
+    },
+    {
+      "icon_id": "8592072",
+      "name": "摄像",
+      "font_class": "shexiang1",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "19841127",
+      "name": "更  多",
+      "font_class": "gengduo-a",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "14917278",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "1633420",
+      "name": "气泡",
+      "font_class": "qipao",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "5267449",
+      "name": "人群",
+      "font_class": "renqun",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "5858411",
+      "name": "文件",
+      "font_class": "wenjian",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "7078882",
+      "name": "气泡",
+      "font_class": "qipao1",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "8245562",
+      "name": "对话框-气泡",
+      "font_class": "dialog-right",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "9040629",
+      "name": "人群",
+      "font_class": "crowd",
+      "unicode": "e705",
+      "unicode_decimal": 59141
+    },
+    {
+      "icon_id": "16792996",
+      "name": "文件",
+      "font_class": "wenjian1",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "17075343",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    }
+  ]
+}
