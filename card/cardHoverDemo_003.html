@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>毛玻璃卡片效果</title>
-    <link rel="stylesheet" href="../uiStruction/cardHoverDemo_003/cardHoverDemo_003.css">
+    <link
+      rel="stylesheet"
+      href="../uiStruction/cardHoverDemo_003/css/cardHoverDemo_003.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -13,9 +16,51 @@
         <div class="content">
           <h2>01</h2>
           <h3>Card One</h3>
-          <p></p>
+          <p>
+            Aliquip consectetur amet magna nulla ad. Nulla sint aliqua duis
+            aliqua minim consectetur exercitation occaecat irure officia
+            pariatur proident labore fugiat. Ad fugiat elit et minim.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2>02</h2>
+          <h3>Card Two</h3>
+          <p>
+            Eiusmod exercitation eu exercitation deserunt laborum velit officia
+            ut qui magna. Ea magna deserunt velit cillum ut nostrud consectetur
+            veniam cupidatat aliqua.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2>03</h2>
+          <h3>Card Three</h3>
+          <p>
+            Officia et nulla ex amet officia mollit minim nulla nisi esse
+            laboris. Duis pariatur consectetur aliquip ut. Tempor magna veniam
+            proident culpa et.
+          </p>
+          <a href="#">Read More</a>
         </div>
       </div>
     </div>
+    <script src="../uiStruction/cardHoverDemo_003/js/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        // 最大倾斜度数
+        max: 15,
+        // 倾斜转换速度
+        speed: 400,
+        // 是否开启炫光效果
+        glare: true,
+        // 最大眩光的不透明度
+        "max-glare": 1,
+      });
+    </script>
   </body>
 </html>
