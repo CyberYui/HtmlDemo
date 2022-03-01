@@ -40,11 +40,13 @@
 }
 
 .btn-item {
+  /* 创建三个模拟按钮 */
   width: 10px;
   height: 10px;
   border-radius: 50%;
 }
 
+/* 以子类的形式创建模拟按钮 */
 .btn-item:nth-child(1) {
   background: #eb5a56;
 }
