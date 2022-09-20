@@ -64,6 +64,7 @@ body{
     align-items: center;
     font-size: 16px;
 }
+/* 使用子父类,调整每个卡片小标记的颜色 */
 .item:nth-child(1) .fa{
     color: #fc6e51;
 }
@@ -79,6 +80,7 @@ body{
 .item:nth-child(5) .fa{
     color: #ac92ec;
 }
+
 .item .content .text{
     display: flex;
     flex-direction: column;

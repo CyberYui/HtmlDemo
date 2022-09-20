@@ -1,6 +1,5 @@
 // 获取所有.item元素
 let items=document.querySelectorAll('.item');
-
 // 设置选中态样式
 function setActive(){
     // 遍历所有.item元素，移出active样式
