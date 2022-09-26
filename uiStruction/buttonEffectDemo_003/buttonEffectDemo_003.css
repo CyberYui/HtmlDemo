@@ -1,0 +1,120 @@
+/* From uiverse.io by @namecho */
+button,
+button::after {
+  padding: 16px 20px;
+  font-size: 18px;
+  /* linear-gradient() 函数用于创建一个表示两种或多种颜色线性渐变的图片 */
+  /* transparent 是颜色默认值,即全透明黑色,这里代指渐变初始位置 */
+  /* 即从5%的全透明处开始渐变,到5%处渐变为红色 */
+  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+  border: 0;
+  color: #fff;
+  /* 设置文字间距 */
+  letter-spacing: 3px;
+  line-height: 1;
+  box-shadow: 6px 0px 0px #00e6f6;
+  outline: transparent;
+  position: relative;
+}
+
+button::after {
+  /* 通过--***的方式创建css变量,此变量作用域是可以级联的 */
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  /* 强制设置内容文字 */
+  content: "HOVER ME";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* 继续使用渐变效果,只不过这次有两个中间值,即加强了渐变 */
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #ff013c 5%
+  );
+  /* 为文字添加两个阴影,每个阴影值由元素在X和Y方向的偏移量,模糊半径和颜色值组成 */
+  /* 这里仅仅设定了偏移量和颜色,没有设定模糊半径 */
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  /* clip-path是一个特定的css属性 */
+  /* 创建一个只有元素的部分区域可以显示的剪切区域,slice-0代表剪切的区域为1/4区*/
+  clip-path: var(--slice-0);
+}
+
+button:hover::after {
+  /* 设定了在鼠标指到元素上之后的动画效果,即显示一次循环尾1s的glitch函数 */
+  /* infinite为属性关键字,表明该动画会无限循环直到鼠标移走 */
+  /* 创建一个名为glitch的关键字函数,并在之后进行了内容设定 */
+  animation: 1s infinite glitch;
+  /* 定义CSS动画在每一动画周期中执行的节奏 */
+  /* steps()是专属于animation属性的跃迁函数 */
+  /* 是transition-timing-function和animation-timing-function两个属性的属性值 */
+  /* 关于steps在animation上的用法,可以参照这个博客https://blog.csdn.net/LY_code/article/details/80209183 */
+  animation-timing-function: steps(2, end);
+}
+
+/* 定义了glitch函数的效果,分为10段进行展示 */
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
