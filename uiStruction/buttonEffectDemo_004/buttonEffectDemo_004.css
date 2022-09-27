@@ -1,9 +1,10 @@
 /* From uiverse.io by @satyamchaudharydev */
-/* === removing default button style ===*/
-body{
-    background-color: black;
+/* 修改背景色保证效果显示更清晰 */
+body {
+  background-color: black;
 }
 
+/* === 移除按钮的默认风格 ===*/
 .button {
   margin: 0;
   background: transparent;
@@ -11,26 +12,34 @@ body{
   border: none;
 }
 
-/* button styling */
+/* 设置按钮样式 */
 .button {
+  /* 设置变量 */
   --border-right: 6px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
   --animation-color: #37ff8b;
-  --fs-size: 2em;
+  /* 设定字间距 */
   letter-spacing: 3px;
+  /* 设定文本修饰为空 */
   text-decoration: none;
-  font-size: var(--fs-size);
+  /* 设置按钮文字大小 */
+  font-size: 2em;
+  /* 设置字体 */
   font-family: "Arial";
+  /* 相对定位 */
   position: relative;
+  /* 无论内容为何,皆会转为大写字母 */
   text-transform: uppercase;
   color: transparent;
+  /* 为文本字符指定宽和颜色,它是-webkit-text-stroke-width和-webkit-text-stroke-color属性的缩写 */
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-/* this is the text, when you hover on button */
+
+/* 鼠标移至按钮后的文字效果 */
 .hover-text {
   position: absolute;
   box-sizing: border-box;
-  content: attr(data-text);
+  /* 通过var函数调用css变量 */
   color: var(--animation-color);
   width: 0%;
   inset: 0;
