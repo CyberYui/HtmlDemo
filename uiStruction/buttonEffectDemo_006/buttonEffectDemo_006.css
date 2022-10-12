@@ -3,11 +3,14 @@ button {
   padding: 0.8em 1.8em;
   border: 2px solid #17c3b2;
   position: relative;
+  /* 修剪溢出的内容 */
   overflow: hidden;
   background-color: transparent;
   text-align: center;
+  /* 转变文字大小写 */
   text-transform: uppercase;
   font-size: 16px;
+  /* 平滑过渡效果 */
   transition: 0.3s;
   z-index: 1;
   font-family: inherit;
@@ -21,17 +24,22 @@ button::before {
   position: absolute;
   top: 50%;
   left: 50%;
+  /* 平移,旋转给定元素 */
+  /* 延X轴和延Y轴均移动-50%,即让体心位于坐标轴中心;旋转45° */
   transform: translate(-50%, -50%) rotate(45deg);
   background: #17c3b2;
+  /* 平滑动画,效果为擦除效果 */
   transition: 0.5s ease;
   display: block;
   z-index: -1;
 }
 
+/* 移动到按钮前的效果 */
 button:hover::before {
   width: 105%;
 }
 
+/* 鼠标移至按钮上的效果 */
 button:hover {
   color: #111;
 }
