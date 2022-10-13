@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+.progress{
+    width: 120px;
+    height: 20px;
+    /* linear-gradient(#000 0 0) 你可以理解为 linear-gradient(#000 0 100%) */
+    /* 用linear-gradient(#000 0 50%, #f00 50% 0)替换它可以有更多的理解 */
+    /* 觉得 linear-gradient(#000 0 0) 别扭的话，直接写 #000 即可 */
+    /* 0/0% 是 background-position: 0;/background-size: 0; 的简写 */
+    background: 
+        linear-gradient(#000 0 0) 0/0% no-repeat #ddd;
+    animation: p1 2s infinite linear;
+}
+
+@keyframes p1{
+    100% {background-size: 100%;}
+}
