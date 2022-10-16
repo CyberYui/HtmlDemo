@@ -1,10 +1,17 @@
 /* From uiverse.io by @mobinkakei */
+/* 设定一下背景色以便更好观赏 */
+body{
+    background-color: #000;
+}
+/* 修改div的整体样式 */
 .toggleWrapper {
     position: absolute;
     top: 50%;
     left: 50%;
+    /* 溢出内容隐藏 */
     overflow: hidden;
     padding: 0 200px;
+    /* 在3D空间内移动一个元素的位置,这里只移动了x轴和y轴 */
     transform: translate3d(-50%, -50%, 0);
     color: white;
   }
@@ -15,6 +22,7 @@
   }
   
   .toggle {
+    /* 修改当移到元素上时的鼠标指针 */
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -25,6 +33,7 @@
     transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
   
+  /* 点击前为白天状态 */
   .toggle:before {
     content: 'AM';
     position: absolute;
@@ -33,6 +42,7 @@
     font-size: 18px;
   }
   
+  /* 点击后为黑夜状态 */
   .toggle:after {
     content: 'PM';
     position: absolute;
@@ -57,6 +67,7 @@
     transform: rotate(-45deg);
   }
   
+  /* 创建三条速度线 */
   .toggle__handler .crater {
     position: absolute;
     background-color: #e8cda5;
@@ -86,6 +97,7 @@
     height: 8px;
   }
   
+  /* 创建6个星星 */
   .star {
     position: absolute;
     background-color: #fff;
