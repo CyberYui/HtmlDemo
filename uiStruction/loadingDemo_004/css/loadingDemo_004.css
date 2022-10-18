@@ -1,0 +1,14 @@
+.progress {
+    width:120px;
+    height:20px;
+    border-radius: 20px;
+    /* 第一行repeating-linear-gradient是进度条加载的条纹 */
+    /* 第二行repeating-linear-gradient是画出灰色的斑马线条纹 */
+    background:
+     repeating-linear-gradient(135deg,#f03355 0 10px,#ffa516 0 20px) 0/0% no-repeat,
+     repeating-linear-gradient(135deg,#ddd 0 10px,#eee 0 20px) 0/100%;
+    animation:p3 2s infinite;
+  }
+  @keyframes p3 {
+      100% {background-size:100%}
+  }
