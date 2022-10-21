@@ -1,36 +1,20 @@
 .progress {
-  width: 80px;
-  height: 40px;
-  border: 2px solid #000;
-  padding: 3px;
-  background: repeating-linear-gradient(90deg, #000 0 10px, #0000 0 16px) 0/0%
-    no-repeat content-box content-box;
+  width:120px;
+  height:22px;
+  border-radius: 20px;
+  color: #514b82;
+  border:2px solid;
   position: relative;
-  animation: p5 2s infinite steps(6);
 }
 .progress::before {
-  content: "";
+  content:"";
   position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: 100%;
-  width: 10px;
-  background: linear-gradient(
-        #0000 calc(50% - 7px),
-        #000 0 calc(50% - 5px),
-        #0000 0 calc(50% + 5px),
-        #000 0 calc(50% + 7px),
-        #0000 0
-      )
-      left / 100% 100%,
-    linear-gradient(#000 calc(50% - 5px), #0000 0 calc(50% + 5px), #000 0) left /
-      2px 100%,
-    linear-gradient(#0000 calc(50% - 5px), #000 0 calc(50% + 5px), #0000 0)
-      right/2px 100%;
-  background-repeat: no-repeat;
+  margin:2px;
+  inset:0 100% 0 0;
+  border-radius: inherit;
+  background: #514b82;
+  animation:p6 2s infinite;
 }
-@keyframes p5 {
-  100% {
-    background-size: 120%;
-  }
+@keyframes p6 {
+    100% {inset:0}
 }
