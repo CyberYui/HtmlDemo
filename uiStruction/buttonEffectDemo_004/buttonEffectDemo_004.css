@@ -6,6 +6,10 @@ body {
 
 /* === 移除按钮的默认风格 ===*/
 .button {
+  /* 设定为本行居中 */
+  position: absolute;
+  left: 50%;
+  /* 移除效果 */
   margin: 0;
   background: transparent;
   padding: 0;
